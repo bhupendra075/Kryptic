@@ -1,0 +1,21 @@
+.code-preview {
+  width: 100%;
+  overflow: auto;
+}
+
+.code-preview pre {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.code-preview .react-syntax-highlighter-line-number {
+  user-select: none;
+  color: var(--text-secondary);
+}
+
+.code-preview .react-syntax-highlighter-line {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}

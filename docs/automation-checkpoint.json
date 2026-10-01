@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "lastProcessedVoxuraRun": {
+    "id": "01a0f357-33d4-72b3-b881-29e549614d6e",
+    "completedAt": "2026-09-30T17:37:57Z",
+    "processedAt": "2026-09-30T17:47:59Z"
+  },
+  "eligiblePendingRun": null,
+  "usageObservations": [
+    {
+      "at": "2026-09-30T09:59:25Z",
+      "fiveHourRemainingPercent": 76,
+      "weeklyRemainingPercent": 60,
+      "ordinaryUsageAllowed": true
+    },
+    {
+      "at": "2026-09-30T10:12:25Z",
+      "fiveHourRemainingPercent": 72,
+      "weeklyRemainingPercent": 60,
+      "ordinaryUsageAllowed": true
+    },
+    {
+      "at": "2026-09-30T10:18:41Z",
+      "fiveHourRemainingPercent": 70,
+      "weeklyRemainingPercent": 59,
+      "ordinaryUsageAllowed": true
+    },
+    {
+      "at": "2026-09-30T11:06:00Z",
+      "fiveHourRemainingPercent": 66,
+      "weeklyRemainingPercent": 59,
+      "ordinaryUsageAllowed": true
+    },
+    {
+      "at": "2026-09-30T12:09:08Z",
+      "fiveHourRemainingPercent": 60,
+      "weeklyRemainingPercent": 58,
+      "ordinaryUsageAllowed": true
+    },
+    {
+      "at": "2026-09-30T13:01:14Z",
+      "fiveHourRemainingPercent": 56,
+      "weeklyRemainingPercent": 51,
+      "ordinaryUsageAllowed": true
+    },
+    {
+      "at": "2026-09-30T13:07:04Z",
+      "ordinaryUsageAllowed": true,
+      "weeklyRemainingPercent": 50,
+      "fiveHourRemainingPercent": 53
+    },
+    {
+      "at": "2026-09-30T17:40:18Z",
+      "fiveHourRemainingPercent": 69,
+      "weeklyRemainingPercent": 45,
+      "ordinaryUsageAllowed": true
+    },
+    {
+      "at": "2026-09-30T17:47:59Z",
+      "fiveHourRemainingPercent": 67,
+      "weeklyRemainingPercent": 45,
+      "ordinaryUsageAllowed": true
+    },
+    {
+      "at": "2026-09-30T18:14:25Z",
+      "fiveHourRemainingPercent": 54,
+      "weeklyRemainingPercent": 43,
+      "ordinaryUsageAllowed": true
+    },
+    {
+      "at": "2026-09-30T18:26:02Z",
+      "fiveHourRemainingPercent": 37,
+      "weeklyRemainingPercent": 40,
+      "ordinaryUsageAllowed": true
+    },
+    {
+      "at": "2026-09-30T18:39:48Z",
+      "fiveHourRemainingPercent": 16,
+      "weeklyRemainingPercent": 37,
+      "ordinaryUsageAllowed": true
+    },
+    {
+      "at": "2026-09-30T18:40:56Z",
+      "fiveHourRemainingPercent": 15,
+      "weeklyRemainingPercent": 36,
+      "ordinaryUsageAllowed": true
+    },
+    {
+      "at": "2026-09-30T21:33:08Z",
+      "fiveHourRemainingPercent": 14,
+      "weeklyRemainingPercent": 36,
+      "ordinaryUsageAllowed": true,
+      "fiveHourResetsAt": "2026-10-01T01:03:03Z"
+    },
+    {
+      "at": "2026-09-30T22:33:01Z",
+      "fiveHourRemainingPercent": 99,
+      "weeklyRemainingPercent": 36,
+      "ordinaryUsageAllowed": true,
+      "fiveHourResetsAt": "2026-10-01T03:24:03Z"
+    },
+    {
+      "at": "2026-10-01T06:44:43Z",
+      "fiveHourRemainingPercent": 48,
+      "fiveHourResetsAt": "2026-10-01T11:51:01Z",
+      "weeklyRemainingPercent": 27,
+      "ordinaryUsageAllowed": true
+    },
+    {
+      "at": "2026-10-01T06:55:49Z",
+      "fiveHourRemainingPercent": 34,
+      "fiveHourResetsAt": "2026-10-01T11:51:00Z",
+      "weeklyRemainingPercent": 25,
+      "ordinaryUsageAllowed": true
+    }
+  ],
+  "currentMilestone": "v2.0 release candidate live; production UI and semantic search validated, offline browser gate pending",
+  "completedChanges": [
+    "Replaced inherited code editor screen with Kryptic create/unlock, responsive vault shell, notes, journal, snippets, search, favorites, and trash UI.",
+    "Added IndexedDB vault configuration and encrypted item records using a random AES-GCM master key wrapped with a PBKDF2-derived key.",
+    "Updated page title, description, and manifest branding.",
+    "Debounced item autosave with serialized writes, flush on blur/lock/visibility change, and failure status; item identity checked after decryption.",
+    "Added Settings password change with current-password verification and atomic vault-key rewrap; fixed flushPending empty-queue result.",
+    "Replaced inherited README with Kryptic scope, security limitations, and roadmap.",
+    "Added encrypted per-entry tags, tag display, and tag terms in ordinary search.",
+    "Added 10-minute inactivity lock with pending-save flush and retry on save failure.",
+    "Added encrypted JSON backup, password and per-entry integrity validation, atomic empty-vault restore, and Settings/welcome UI.",
+    "Added per-entry plaintext Markdown, JSON, and PDF export with warning and safe filenames.",
+    "Added production app-shell service worker, install icons/manifest, Cloudflare security headers, and wait-for-commit IndexedDB writes.",
+    "Created editable Figma desktop vault, mobile vault, and create/unlock screens with 12 design variables, 3 reusable components, 69 editable text layers, and 17 instances.",
+    "Added up to five encrypted inline attachments per entry (2 MB each), included naturally in vault backups.",
+    "Added manual version snapshots (last 20) and restore with an automatic undo snapshot, encrypted in each item.",
+    "Added advanced search filters for tag, type, favorite, and date; added Ctrl+K command palette.",
+    "Added Chrome/Edge desktop local semantic search with browser worker and cached MiniLM model; mobile retains ordinary search.",
+    "Upgraded jsPDF to 4.2.1 after dependency audit and documented current feature scope.",
+    "Labeled package Kryptic 2.0.0-rc.1 and classified build/test dependencies as development-only; patched fflate to 0.8.3.",
+    "Added app integration coverage for advanced filters, Ctrl+K, revision restore, and stale semantic results; fixed stale semantic request handling.",
+    "Packaged ONNX WASM loader and binary on the Pages origin so desktop semantic search works under restrictive CSP.",
+    "Created Cloudflare Pages project and deployed verified release candidate to https://kryptic-5kk.pages.dev.",
+    "Reduced service-worker installation to seven core shell files; large semantic runtime assets now cache after first use.",
+    "Added a CI build wrapper that accepts only the known upstream Transformers import.meta warning and fails on other compilation warnings.",
+    "Published final 2.0.0-rc.1 production archive to Cloudflare Pages on 2026-10-01."
+  ],
+  "testEvidence": [
+    "node --check src/vault.js passed.",
+    "npm install reconciled inherited package-lock.json and installed dependencies.",
+    "npm run build compiled successfully.",
+    "CI=true npm test -- --watch=false passed: 1 test.",
+    "Browser at localhost:3000 rendered the Kryptic create-vault screen; credential and persistence flow not exercised.",
+    "2026-09-30: Jest 3 tests pass, including wrong password, ciphertext tampering, record identity, encryption at rest, and unlock persistence.",
+    "2026-09-30: Production build compiled successfully after React hook warning cleanup.",
+    "2026-09-30: Browser created note, edited title and body, locked, reloaded, unlocked, and recovered content; ordinary search included and excluded it as expected.",
+    "2026-09-30: Browser password change succeeded; old password failed and new password unlocked same note.",
+    "2026-09-30: Jest 4 tests pass including password rewrap preservation and wrong-password rejection; production build compiled successfully.",
+    "2026-09-30 13:07 UTC: Jest 4 tests pass and production build compiles after tags and inactivity lock; new flows are not yet browser validated.",
+    "2026-09-30: Jest 5 tests pass, including backup round-trip and wrong-password/tamper rejection; production build compiled successfully before final CSS-only tweak.",
+    "2026-09-30 manual continuation: Jest 6 tests pass; production build and postbuild service worker generation pass.",
+    "Browser: tag search, encrypted backup download and restore to fresh origin, restored entry unlock, 390px mobile layout without page-wide overflow, and PDF text extraction passed.",
+    "Figma visual screenshots reviewed for all three screens; structure audit found 19 frames, 69 text layers, 17 instances, and 3 components.",
+    "Browser uploaded README attachment, saw saved status, reloaded, unlocked, and recovered attachment row.",
+    "Jest 7 tests pass including revision restore/undo and attachment encryption in backup; production build passes after handler rename.",
+    "Browser on 127.0.0.1:3001 loaded the semantic model and returned Related results (1) for a query ordinary search did not match.",
+    "Jest 9 tests and production build pass after advanced search and command palette changes; browser checks for these latest controls remain pending.",
+    "Production npm audit has remaining transitive advisories. Critical shell-quote and websocket-driver dependencies trace to react-scripts development tooling; sharp traces to Transformers dependency. Release security gate remains open.",
+    "2026-10-01: 11 Jest tests pass across 7 suites; production build and service-worker postbuild succeed with upstream Transformers import.meta warning.",
+    "Live preview: note creation/edit/tags/favorite, advanced filter inclusion/exclusion, Ctrl+K navigation, revision restore, reload/unlock persistence, and desktop local semantic result pass.",
+    "Live 390px layout has no page-wide overflow; navigation scrolls within its row.",
+    "Live production HTTPS root, ONNX .mjs/.wasm MIME types, CSP, HSTS, Referrer-Policy, and X-Content-Type-Options verified.",
+    "Production npm audit has two remaining high findings caused by sharp in Transformers Node dependency; patched fflate finding cleared.",
+    "2026-10-01: 11 Jest tests across 7 suites and CI=true production build passed; 26/26 files uploaded in final production deployment.",
+    "2026-10-01: Production root returns 200, current sw.js exactly matches local build, CSP and HSTS headers confirmed; browser rendered live create-vault screen.",
+    "Service-worker static check: 7 core shell assets and 13 lazy/runtime assets; live offline navigation remains unverified."
+  ],
+  "nextSteps": [
+    "Verify offline PWA app-shell load and encrypted vault access after first online visit in a reachable browser.",
+    "Confirm actual mobile Chrome/Edge user-agent keeps semantic search disabled and ordinary search usable.",
+    "Review Node-only sharp audit findings and CI warning acceptance for final v2.0 release; finalize release documentation and version gate."
+  ],
+  "figmaUrl": "https://www.figma.com/design/33y6LlgbBzbU7D8u75l0eu",
+  "cloudflareUrl": "https://kryptic-5kk.pages.dev",
+  "diagnosticPreviewUrl": "https://semantic-diagnostics.kryptic-5kk.pages.dev",
+  "packageVersion": "2.0.0-rc.1"
+}
